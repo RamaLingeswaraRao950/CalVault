@@ -41,3 +41,7 @@ app/src/main/assets/Screenshot_*.jpg
 # Temporary files
 *.tmp
 *.temp
+
+.github/
+fastlane/
+Privacy Policy.md
