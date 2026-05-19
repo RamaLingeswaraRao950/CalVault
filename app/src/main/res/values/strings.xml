@@ -278,26 +278,7 @@
     <string name="about_description">About app, support, creadits</string>
     <string name="about">About</string>
     <string name="dev_name">Created By RamaLingeswaraRao950</string>
-    <string name="donate">Donate</string>
-    <string name="ko_fi">Ko-fi</string>
-    <string name="ko_fi_url" translatable="false"></string>
-    <string name="paypal">PayPal</string>
-    <string name="paypal_id" translatable="false"></string>
-    <string name="upi">UPI</string>
-    <string name="upi_id" translatable="false"></string>
     <string name="copied_to_clipboard">Copied to clipboard</string>
-    <string name="social_media">Social Media</string>
-    <string name="instagram">Instagram</string>
-    <string name="instagram_handle"></string>
-    <string name="instagram_url" translatable="false"></string>
-    <string name="telegram">Telegram</string>
-    <string name="telegram_handle"></string>
-    <string name="telegram_url" translatable="false"></string>
-    <string name="contact_us">Contact Us</string>
-    <string name="email">Email</string>
-    <string name="contact_email"></string>
-    <string name="buy_me_a_coffee">Buy Me A Coffee</string>
-    <string name="coffee_url"></string>
     <string name="history">History</string>
     <string name="calculation_history">Calculation History</string>
     <string name="clear_history">Clear History</string>
@@ -307,6 +288,5 @@
     <string name="corner_radius">Corner Radius</string>
     <string name="span_count">Span Count</string>
     <string name="columns">Columns</string>
-    <string name="made_with_heart">Made with ❤️ by devs.org</string>
     <string name="copyright_text">© 2024 Calculator Vault</string>
 </resources>

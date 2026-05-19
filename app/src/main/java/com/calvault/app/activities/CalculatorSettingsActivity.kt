@@ -1,9 +1,7 @@
 package com.calvault.app.activities
 
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.content.res.Configuration
-import android.os.Build
 import android.os.Bundle
 import android.view.HapticFeedbackConstants
 import android.view.SoundEffectConstants
@@ -20,8 +18,6 @@ import com.calvault.app.utils.formatResult
 class CalculatorSettingsActivity : BaseCalculatorActivity() {
 
     private lateinit var binding: ActivityCalculatorSettingsBinding
-    private var DEV_GITHUB_URL = ""
-    private var GITHUB_URL = ""
     private var DEFAULT_PRECISION = 12345.6789123456789123
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,16 +30,7 @@ class CalculatorSettingsActivity : BaseCalculatorActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val versionName = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            packageManager
-                .getPackageInfo(packageName, PackageManager.PackageInfoFlags.of(0))
-                .versionName
-        } else {
-            packageManager.getPackageInfo(packageName, 0).versionName
-        }
-        binding.version.text = getString(R.string.version, versionName)
-        DEV_GITHUB_URL = getString(R.string.github_profile)
-        GITHUB_URL = getString(R.string.calculator_hide_files, DEV_GITHUB_URL)
+        // App details are currently hidden on the settings screen.
         setupUI()
         loadSettings()
         setupListeners()
@@ -58,7 +45,7 @@ class CalculatorSettingsActivity : BaseCalculatorActivity() {
 
     private fun loadSettings() {
 
-        binding.dynamicColorsSwitch.isChecked = prefs.getBoolean("dynamic_theme", true)
+        // Dynamic colors option is currently hidden on the settings screen.
         binding.vibrationStatus.isChecked = prefs.getBoolean("vibration_haptic", true)
         binding.soundStatus.isChecked = prefs.getBoolean("sound_haptic", true)
         val precision = prefs.getInt("precision", 3)
@@ -89,20 +76,17 @@ class CalculatorSettingsActivity : BaseCalculatorActivity() {
 
     private fun setupListeners() {
 
-        binding.githubButton.setOnClickListener {
-            openUrl(GITHUB_URL)
-        }
+        // App details and about section are currently hidden on the settings screen.
+        // binding.githubButton.setOnClickListener { openUrl(GITHUB_URL) }
+        // binding.aboutButton.setOnClickListener { startActivity(Intent(this, AboutActivity::class.java)) }
 
-        binding.aboutButton.setOnClickListener {
-            startActivity(Intent(this, AboutActivity::class.java))
-        }
-
-        binding.dynamicColorsSwitch.setOnCheckedChangeListener { _, isChecked ->
-            if (prefs.getBoolean("dynamic_theme", true) != isChecked) {
-                prefs.setBoolean("dynamic_theme", isChecked)
-                recreate()
-            }
-        }
+        // Dynamic colors option is currently hidden on the settings screen.
+        // binding.dynamicColorsSwitch.setOnCheckedChangeListener { _, isChecked ->
+        //     if (prefs.getBoolean("dynamic_theme", true) != isChecked) {
+        //         prefs.setBoolean("dynamic_theme", isChecked)
+        //         recreate()
+        //     }
+        // }
 
 
         binding.chooseThemeButtonToggleGroup.addOnButtonCheckedListener { _, checkedId, isChecked ->

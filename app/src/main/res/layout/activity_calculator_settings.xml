@@ -43,11 +43,13 @@
 
             <TextView
                 style="@style/sectionText"
-                android:text="@string/app_details" />
+                android:text="@string/app_details"
+                android:visibility="gone" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 style="@style/optionLayout"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/appLogo"
@@ -97,7 +99,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/dynamicColorsLayout"
                 style="@style/optionLayout"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/dynamicColorsImage"
@@ -363,7 +366,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/aboutButton"
                 style="@style/optionLayout"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/aboutImage"

@@ -1,10 +1,7 @@
 package com.calvault.app.activities
 
-import android.content.ClipData
-import android.content.ClipboardManager
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toUri
@@ -59,52 +56,6 @@ class AboutActivity : AppCompatActivity() {
         setupItem(binding.sourceCodeItem, R.drawable.ic_github, getString(R.string.view_source_code), getString(R.string.view_the_source_code_of_the_app)) {
             openUrl(GITHUB_URL)
         }
-
-        setupOptionalUrlItem(
-            binding.bmcItem,
-            R.drawable.buy_me_a_coffee,
-            getString(R.string.buy_me_a_coffee),
-            getString(R.string.coffee_url)
-        )
-        setupOptionalUrlItem(
-            binding.kofiItem,
-            R.drawable.kofi,
-            getString(R.string.ko_fi),
-            getString(R.string.ko_fi_url)
-        )
-        setupOptionalCopyItem(
-            binding.paypalItem,
-            R.drawable.paypal,
-            getString(R.string.paypal),
-            getString(R.string.paypal_id)
-        )
-        setupOptionalCopyItem(
-            binding.upiItem,
-            R.drawable.upi_pay,
-            getString(R.string.upi),
-            getString(R.string.upi_id)
-        )
-        setupOptionalUrlItem(
-            binding.instagramItem,
-            R.drawable.ic_instagram,
-            getString(R.string.instagram),
-            getString(R.string.instagram_url),
-            getString(R.string.instagram_handle)
-        )
-        setupOptionalUrlItem(
-            binding.telegramItem,
-            R.drawable.ic_telegram,
-            getString(R.string.telegram),
-            getString(R.string.telegram_url),
-            getString(R.string.telegram_handle)
-        )
-        setupOptionalCopyItem(
-            binding.emailItem,
-            R.drawable.ic_mail,
-            getString(R.string.email),
-            getString(R.string.contact_email)
-        )
-
     }
 
     private fun setupItem(includeBinding: LayoutAboutItemBinding, iconRes: Int, title: String, subtitle: String, onClick: () -> Unit) {
@@ -112,33 +63,6 @@ class AboutActivity : AppCompatActivity() {
         includeBinding.itemTitle.text = title
         includeBinding.itemSubtitle.text = subtitle
         includeBinding.root.setOnClickListener { onClick() }
-    }
-
-    private fun setupOptionalUrlItem(
-        includeBinding: LayoutAboutItemBinding,
-        iconRes: Int,
-        title: String,
-        url: String,
-        subtitleOverride: String? = null,
-    ) {
-        if (url.isBlank()) {
-            includeBinding.root.visibility = View.GONE
-            return
-        }
-        setupItem(includeBinding, iconRes, title, subtitleOverride ?: url) { openUrl(url) }
-    }
-
-    private fun setupOptionalCopyItem(
-        includeBinding: LayoutAboutItemBinding,
-        iconRes: Int,
-        title: String,
-        value: String,
-    ) {
-        if (value.isBlank()) {
-            includeBinding.root.visibility = View.GONE
-            return
-        }
-        setupItem(includeBinding, iconRes, title, value) { copyToClipboard(value, title) }
     }
 
     private fun openUrl(url: String) {
@@ -149,12 +73,5 @@ class AboutActivity : AppCompatActivity() {
             e.printStackTrace()
             Snackbar.make(binding.root, getString(R.string.could_not_open_url), Snackbar.LENGTH_SHORT).show()
         }
-    }
-
-    private fun copyToClipboard(text: String, label: String) {
-        val clipboard = getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
-        val clip = ClipData.newPlainText(label, text)
-        clipboard.setPrimaryClip(clip)
-        Snackbar.make(binding.root, getString(R.string.copied_to_clipboard), Snackbar.LENGTH_SHORT).show()
     }
 }
