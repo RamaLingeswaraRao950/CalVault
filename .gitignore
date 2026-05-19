@@ -1,20 +1,43 @@
+# IntelliJ / Android Studio
+.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+
+# Gradle
+.gradle/
+build/
+*/build/
+
+# Local config
 local.properties
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Android generated
+captures/
+.externalNativeBuild/
+.cxx/
+.kotlin/
+
+# Signing / secrets
+*.jks
+*.keystore
+keystore.properties
+secret.properties
+
+# Logs
+*.log
+
+# APK / Bundle outputs
+*.apk
+*.aab
 
 # Media / marketing assets
 media/
 fastlane/metadata/android/**/images/phoneScreenshots/
 app/src/main/assets/Screenshot_*.jpg
+
+# Temporary files
+*.tmp
+*.temp
