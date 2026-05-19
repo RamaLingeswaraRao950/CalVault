@@ -13,3 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Media / marketing assets
+media/
+fastlane/metadata/android/**/images/phoneScreenshots/
+app/src/main/assets/Screenshot_*.jpg

@@ -1,37 +1,7 @@
-![App banner](media/banner.png)
-
-<div align="center">
-
-# Calculator Hide File App for Android
-
-<a href="https://github.com/RamaLingeswaraRao950/CalVault/releases/latest">
-      <img alt="Latest release" src="https://img.shields.io/badge/Releases-v2.0.2-blue?logo=github&style=for-the-badge">
-</a>
-
-<a href="https://github.com/RamaLingeswaraRao950/CalVault/releases/latest">
-  <img alt="Downloads" src="https://img.shields.io/badge/downloads-12K+-blue?logo=github&style=for-the-badge">
-</a>
-
-<a href="LICENSE">
-  <img alt="Apache License 2.0" src="https://img.shields.io/badge/License-Apache_2.0-blue?logo=github&style=for-the-badge">
-</a>
-
-
-<br>
-</div>
-<div align="center"> 
-         
-<h4>Download</h4>
-
-<a>[<img src="https://github.com/machiav3lli/oandbackupx/blob/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png" alt="Get it on GitHub" height="80">](https://github.com/RamaLingeswaraRao950/CalVault/releases) </a><a href="https://apt.izzysoft.de/fdroid/index/apk/devs.org.calculator"><img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" height="80"></a> <a href="https://www.androidfreeware.net/download-apk-devs-org-calculator.html"><img src="https://www.androidfreeware.net/images/androidfreeware-badge.png" height="80">
-[<img src="https://www.openapk.net/images/openapk-badge.png" alt="Get it on OpenApk" height="80">](https://www.openapk.net/calculator/devs.org.calculator/)
-</a> 
-
-</div>
+# CalVault
 
 ## Why Choose This App?  
 The **Calculator Hide File App** is an **open-source** application, allowing you to inspect the code yourself. This ensures **complete transparency** and guarantees that your **privacy remains uncompromised**.  
-
 
 ---
 
@@ -54,34 +24,6 @@ The **Calculator Hide File App** is an innovative **Android file-hiding app** th
 - **Fast & Lightweight** - Smooth performance on all Android devices.  
 - **No Root Required** - Works without rooting your phone.  
 - **Security** - Encrypt & Decrypt files.
----
-
-## Screenshots
-
-<div align="center">
-  <img src="media/Screenshot_1.jpg" alt="Calculator Hide File App - Home Screen" width="32%">
-  <img src="media/Screenshot_2.jpg" alt="Calculator Hide File App - Secure File Storage" width="32%">
-  <img src="media/Screenshot_3.jpg" alt="Calculator Hide File App - Passcode Protection" width="32%">
-</div>
-
-<div align="center">
-  <img src="media/Screenshot_4.jpg" alt="Calculator Hide File App - Hidden Files Manager" width="32%">
-  <img src="media/Screenshot_5.jpg" alt="Calculator Hide File App - Hidden Files Manager" width="32%">
-    <img src="media/Screenshot_6.jpg" alt="Calculator Hide File App - Hidden Files Manager" width="32%">
-</div>
-
-<div align="center">
-    <img src="media/Screenshot_7.jpg" alt="Calculator Hide File App - Hidden Files Manager" width="32%">
-    <img src="media/Screenshot_8.jpg" alt="Calculator Hide File App - Hidden Files Manager" width="32%">
-    <img src="media/Screenshot_9.jpg" alt="Calculator Hide File App - Hidden Files Manager" width="32%">
-</div>
-
-<div align="center">
-    <img src="media/Screenshot_10.jpg" alt="Calculator Hide File App - Hidden Files Manager" width="32%">
-    <img src="media/Screenshot_11.jpg" alt="Calculator Hide File App - Hidden Files Manager" width="32%">
-    <img src="media/Screenshot_12.jpg" alt="Calculator Hide File App - Hidden Files Manager" width="32%">
-</div>
-
 ---
 
 ## How It Works
@@ -141,42 +83,6 @@ git clone https://github.com/RamaLingeswaraRao950/CalVault.git
 - **No One Can Detect Your Files** - Works like a real calculator.  
 - **100% Secure** - Your private files stay hidden, even if someone opens the app.  
 - **Completely Free & Open Source** - Modify or contribute to the project.  
-
----
-
-## ❤️ Support the Project
-
-If you find this app useful, please consider supporting the development.
-
-[![Sponsor on GitHub](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/RamaLingeswaraRao950)
-
----
-
-## Contributing
-
-We welcome contributions! To contribute:
-
-1. **Fork the repository**  
-2. **Create a new branch**  
-   ```bash
-   git checkout -b feature-name
-   ```
-3. **Commit your changes**  
-   ```bash
-   git commit -m "Add a new feature"
-   ```
-4. **Push to GitHub**  
-   ```bash
-   git push origin feature-name
-   ```
-5. **Create a Pull Request**  
-
----
-
-## License
-
-This project is licensed under the **Apache License 2.0**.  
-See the full license [here](LICENSE).  
 
 ---
 
