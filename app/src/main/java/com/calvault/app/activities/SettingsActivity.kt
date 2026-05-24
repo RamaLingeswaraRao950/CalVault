@@ -45,18 +45,18 @@ class SettingsActivity : BaseActivity() {
 
     private fun loadSettings() {
 
-        val isUsingCustomKey = SecurityUtils.isUsingCustomKey(this)
-        binding.customKeyStatus.isChecked = isUsingCustomKey
+//        val isUsingCustomKey = SecurityUtils.isUsingCustomKey(this)
+//        binding.customKeyStatus.isChecked = isUsingCustomKey
         binding.screenshotRestrictionSwitch.isChecked = prefs.getBoolean("screenshot_restriction", true)
-        binding.encryptionSwitch.isChecked = prefs.getBoolean("encryption", false)
+//        binding.encryptionSwitch.isChecked = prefs.getBoolean("encryption", false)
         binding.gotomain.isChecked = prefs.getBoolean("is_vault_enabled", true)
     }
 
     private fun setupListeners() {
         
-        binding.encryptionSwitch.setOnCheckedChangeListener { _, isChecked ->
-            prefs.setBoolean("encryption", isChecked)
-        }
+//        binding.encryptionSwitch.setOnCheckedChangeListener { _, isChecked ->
+//            prefs.setBoolean("encryption", isChecked)
+//        }
         binding.changePassLayout.setOnClickListener {
             startActivity(Intent(this, SetupPasswordActivity::class.java))
         }
@@ -73,9 +73,9 @@ class SettingsActivity : BaseActivity() {
             prefs.setBoolean("is_vault_enabled", isChecked)
         }
 
-        binding.customKeyStatusLayout.setOnClickListener {
-            showCustomKeyDialog()
-        }
+//        binding.customKeyStatusLayout.setOnClickListener {
+//            showCustomKeyDialog()
+//        }
     }
 
     private fun enableScreenshotRestriction() {
@@ -136,9 +136,9 @@ class SettingsActivity : BaseActivity() {
     }
 
     private fun updateUI() {
-        binding.encryptionSwitch.isChecked = prefs.getBoolean("encryption", false)
-        val isUsingCustomKey = SecurityUtils.isUsingCustomKey(this)
-        binding.customKeyStatus.isChecked = isUsingCustomKey
+//        binding.encryptionSwitch.isChecked = prefs.getBoolean("encryption", false)
+//        val isUsingCustomKey = SecurityUtils.isUsingCustomKey(this)
+//        binding.customKeyStatus.isChecked = isUsingCustomKey
     }
 
 

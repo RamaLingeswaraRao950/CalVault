@@ -81,7 +81,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+<!--            <androidx.constraintlayout.widget.ConstraintLayout
                 style="@style/optionLayout"
                 android:layout_marginTop="4dp">
 
@@ -115,9 +115,9 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+<!--            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/customKeyStatusLayout"
                 style="@style/optionLayout"
                 android:layout_marginTop="4dp">
@@ -154,7 +154,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>-->
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/changePassLayout"
